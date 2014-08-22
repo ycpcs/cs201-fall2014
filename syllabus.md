@@ -109,7 +109,7 @@ The following policy pertains to homework and graded (individual) programming as
 
 Quizzes and exams must be completed individually.
 
-Lab assignments are not graded---therefore, you may work with other students on them. However, we do expect you to complete and submit them. Failure to complete lab assignments may affect your attendance and participation grade.
+Lab assignments are not graded&mdash;therefore, you may work with other students on them. However, we do expect you to complete and submit them. Failure to complete lab assignments may affect your attendance and participation grade.
 
 Any violation of the course's academic integrity policy will be referred to the Dean of Academic Affairs, and could have consequences ranging from a 0 on an assignment to dismissal from the college.
 
