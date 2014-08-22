@@ -1,8 +1,17 @@
 ---
 layout: default
-title: "CS 201, Fall 2014"
+title: "Home page"
 ---
 
-Welcome to the site!
+# Welcome to CS 201, Fall 2014!
 
-There is nothing here yet.
+This is the website for CS 201, Fall 2014 at York College. All information about the
+course will be posted here.
+
+## Links
+
+* [Syllabus](syllabus.html)
+
+## News
+
+* **Aug 22** - Welcome back!
