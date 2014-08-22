@@ -22,6 +22,20 @@
 	color: white;
 }
 
+#footer {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 10px 30px;
+	text-align: center;
+	border-top: 2px solid #55a;
+	border-bottom: 2px solid #55a;
+}
+
+/* Minor tweak to get the CC image link to align nicely with the footer text */
+a.cc-img {
+	vertical-align: -2px;
+}
+
 #topnav {
 	text-align: center;
 	padding: 4px 16px;
