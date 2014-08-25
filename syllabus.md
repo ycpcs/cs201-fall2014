@@ -8,9 +8,19 @@ CS 201 - Fundamentals of Computer Science II
 
 **Fall 2014**
 
-Instructor | Email | Office hours
----------- | ----- | ------------
-[David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | TBA
+Staff:
+
+> Instructor | Email | Office hours
+> ---------- | ----- | ------------
+> [David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | M 10-12, T/Th 2-3, W 9-10
+
+Meeting times:
+
+> Section | Location | Times
+> ------- | -------- | -----
+> 101 | KEC 123 | 10-11:15
+> 102 | KEC 123 | 12-1:15
+> 103 | KEC 123 | 2-3:15
 
 Course Description
 ------------------
