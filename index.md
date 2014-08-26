@@ -11,6 +11,8 @@ course will be posted here.
 ## Links
 
 * [Syllabus](syllabus.html)
+* [Schedule](schedule.html)
+* [Labs](labs/index.html)
 
 ## News
 
