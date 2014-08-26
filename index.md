@@ -13,6 +13,7 @@ course will be posted here.
 * [Syllabus](syllabus.html)
 * [Schedule](schedule.html)
 * [Labs](labs/index.html)
+* [Resources](resources/index.html)
 
 ## News
 
