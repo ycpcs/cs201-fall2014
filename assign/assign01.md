@@ -115,6 +115,16 @@ The **PLAYER\_X** and **PLAYER\_O** constants are defined with the values 1 and 
 
 ## Static methods
 
+These are the static methods you must implement.
+
+Note that the bodies of some of the methods have the code
+
+{% highlight java %}
+throw new UnsupportedOperationException("not implemented yet");
+{% endhighlight %}
+
+As you implement each method, simply remove this code.
+
 <dl>
 <dt><b>public static void printBoard(int[][] board)</b></dt>
 <dd>
@@ -150,7 +160,7 @@ This method should return <b>true</b> if all spaces on the board are occupied an
 
 ## Testing
 
-You can run JUnit tests by right-clicking **TicTacToeTest.java** and choosing **Run As &rarr; JUnit test**.  If you see a green bar, then all of the tests have passed.
+You can run JUnit tests by right-clicking **TicTacToeTest.java** (in the **junit** source folder) and choosing **Run As &rarr; JUnit test**.  If you see a green bar, then all of the tests have passed.
 
 Note that not every method will be tested, and it is possible that the tests don't test every possible situation.  I highly encourage you to add your own tests!
 
