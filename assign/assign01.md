@@ -58,6 +58,7 @@ Invalid move, try again
    | X |   
 ---|---|---
    |   |   
+
 Player X's turn:
 Enter row (0-2): <b>1</b>
 Enter column (0-2): <b>1</b>
