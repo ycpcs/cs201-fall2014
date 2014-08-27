@@ -103,3 +103,7 @@ pre {
 	border: 1px solid #bbb;
 	overflow: auto; /* scroll if doesn't fit within page */
 }
+
+dt {
+	margin-top: 8px;
+}
