@@ -101,7 +101,9 @@ Your task is to complete the static methods described below.  Static methods are
 
 The game board is represented by a 3x3 array of **int** values:
 
-    int[][] board = new int[3][3];
+```java
+int[][] board = new int[3][3];
+```
 
 Note that each element of the array will contain the value 0 initially.
 
