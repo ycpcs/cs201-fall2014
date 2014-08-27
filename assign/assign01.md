@@ -125,6 +125,8 @@ throw new UnsupportedOperationException("not implemented yet");
 
 As you implement each method, simply remove this code.
 
+Also note that arrays in Java are passed by reference (just like arrays in C), so a static method can modify an array it receives via a parameter.
+
 <dl>
 <dt><b>public static void printBoard(int[][] board)</b></dt>
 <dd>
