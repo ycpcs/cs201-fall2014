@@ -13,8 +13,10 @@ course will be posted here.
 * [Syllabus](syllabus.html)
 * [Schedule](schedule.html)
 * [Labs](labs/index.html)
+* [Assignments](assign/index.html)
 * [Resources](resources/index.html)
 
 ## News
 
+* **Aug 27** - [Assignment 1](assign/assign01.html) is due Friday, Sep 5th by 11:59 PM.
 * **Aug 22** - Welcome back!
