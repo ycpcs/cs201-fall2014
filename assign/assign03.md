@@ -205,7 +205,7 @@ When you are done, submit the lab to the Marmoset server using either of the met
 From Eclipse
 ------------
 
-If you have the [Simple Marmoset Uploader Plugin](../resources.html) installed, select the project (**CS201\_Assign03**) in the package explorer and then press the blue up arrow button in the toolbar. Enter your Marmoset username and password when prompted. There are two inboxes, **assign03\_ms1** and **assign03\_ms2**, corresponding to the two milestones for the assignment: make sure you choose the one that is appropriate.
+If you have the [Simple Marmoset Uploader Plugin](../resources/index.html) installed, select the project (**CS201\_Assign03**) in the package explorer and then press the blue up arrow button in the toolbar. Enter your Marmoset username and password when prompted. There are two inboxes, **assign03\_ms1** and **assign03\_ms2**, corresponding to the two milestones for the assignment: make sure you choose the one that is appropriate.
 
 From a web browser
 ------------------

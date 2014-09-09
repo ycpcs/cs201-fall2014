@@ -82,7 +82,7 @@ When you are done, submit the lab to the Marmoset server using either of the met
 From Eclipse
 ------------
 
-If you have the [Simple Marmoset Uploader Plugin](../resources.html) installed, select the project (**CS201\_Assign02**) in the package explorer and then press the blue up arrow button in the toolbar. Enter your Marmoset username and password when prompted.
+If you have the [Simple Marmoset Uploader Plugin](../resources/index.html) installed, select the project (**CS201\_Assign02**) in the package explorer and then press the blue up arrow button in the toolbar. Enter your Marmoset username and password when prompted.
 
 From a web browser
 ------------------
