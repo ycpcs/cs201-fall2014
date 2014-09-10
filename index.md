@@ -15,9 +15,11 @@ course will be posted here.
 * [Labs](labs/index.html)
 * [Assignments](assign/index.html)
 * [Resources](resources/index.html)
+* [Tutoring](tutoring.html)
 
 ## News
 
+* **Sep 10** - Information about [tutoring](tutoring.html) is available.
 * **Sep 9** - [Assignment 2](assign/assign02.html) is due Wednesday, Sep 17th by 11:59 PM.  [Assignment 3](assign/assign03.html) has two milestones: Milestone 1 is due Wednesday, Sep 24th by 11:59 PM, and Milestone 2 is due Wednesday, Oct 1st by 11:59 PM.
 * **Aug 27** - [Assignment 1](assign/assign01.html) is due Friday, Sep 5th by 11:59 PM.
 * **Aug 22** - Welcome back!
