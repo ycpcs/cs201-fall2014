@@ -23,7 +23,7 @@ Tutors will be available during the last 30 minutes of each class:
 
 Open (drop-in) sessions are held Tuesday, Wednesday, and Thursday from 6-8 PM in KEC 123.
 
-<div class="callout"><b>Note</b>: On Tuesday, Sept 23rd, the evening session will be in KEC 130 instead of KEC 123.</div>
+<div class="callout"><b>Note</b>: On Tuesday, Sept 16th, the evening session will be in KEC 130 instead of KEC 123.</div>
 
 * T: Sam Nelson, Mike Marsh
 * W: Chris Yealy, Daniel Hatton
