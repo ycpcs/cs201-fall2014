@@ -57,7 +57,24 @@ where (x1,y1) and (x2,y2) are the coordinates of the points.
 
 You can use the **Math.sqrt** method to compute the square root of a **double** value.
 
-You will need to think carefully about how to implement the **overlaps** method in the **Rectangle** class.
+You will need to think carefully about how to implement the **overlaps** method in the **Rectangle** class.  Here is a sketch of a possible approach:
+
+* If the center of the circle is inside the rectangle, then there is definitely overlap.
+* If the center of the circle is directly above, below, to the left, or to the right of the rectangle, and the distance between the center of the circle and the closest edge is less than the radius of the circle, then there is overlap.
+* If the center of the circle is in one of the corner regions, and the distance from the center of the circle to the closest corner of the rectangle is less than the radius of the circle, then there is overlap.
+* Otherwise, there is no overlap.
+
+When you write tests, you may need to test whether a **Point** object has expected x and y coordinate values.  There are two ways you can do this:
+
+* Add an **equals** method to the **Point** class (see [Lecture 9](../lectures/lecture09.html))
+* Use separate assertions for the x and y coordinates.  For example, to check the coordinates of the center of a **Circle** object:
+
+     ```java
+     Point center = someCircle.getCenter();
+     assertEquals(5.0, center.getX(), DELTA);
+     assertEquals(6.0, center.getY(), DELTA);
+     ```
+
 
 Grading
 =======
