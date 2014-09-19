@@ -19,6 +19,7 @@ course will be posted here.
 
 ## News
 
+* **Sep 19** - The deadlines for [Assignment 3](assign/assign03.html), Milestones 1 and 2, have been changed to Friday, Sept 26th and Friday, Oct 3rd (respectively).
 * **Sep 15** - Some hints have been added to the description of [Assignment 2](assign/assign02.html).
 * **Sep 10** - Information about [tutoring](tutoring.html) is available.
 * **Sep 9** - [Assignment 2](assign/assign02.html) is due Wednesday, Sep 17th by 11:59 PM.  [Assignment 3](assign/assign03.html) has two milestones: Milestone 1 is due Wednesday, Sep 24th by 11:59 PM, and Milestone 2 is due Wednesday, Oct 1st by 11:59 PM.
