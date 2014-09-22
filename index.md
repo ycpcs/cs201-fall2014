@@ -16,9 +16,11 @@ course will be posted here.
 * [Assignments](assign/index.html)
 * [Resources](resources/index.html)
 * [Tutoring](tutoring.html)
+* [Practice Exams](practice/index.html)
 
 ## News
 
+* **Sep 22** - Exam 1 will take place in class on Friday, Oct 3rd.  It will be open book and open notes.  Computers and electronic devices will not be allowed during the written part of the exam.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Sep 19** - The deadlines for [Assignment 3](assign/assign03.html), Milestones 1 and 2, have been changed to Friday, Sept 26th and Friday, Oct 3rd (respectively).
 * **Sep 15** - Some hints have been added to the description of [Assignment 2](assign/assign02.html).
 * **Sep 10** - Information about [tutoring](tutoring.html) is available.
