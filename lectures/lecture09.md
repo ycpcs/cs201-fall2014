@@ -35,12 +35,7 @@ java.lang.Object
 
 Every class in Java is a subclass of the class **java.lang.Object**. If you don't specify a superclass when you define a class, it will be a direct subclass of **java.lang.Object**.
 
-The **java.lang.Object** type is useful for two reasons.
-
-Object methods
---------------
-
-The first reason is that it defines some methods that are useful for all objects. For example, the **equals** method:
+One reason that the **Object** class is useful is that it defines some methods that are useful for all objects. For example, the **equals** method:
 
 {% highlight java %}
 public boolean equals(Object o) {
@@ -95,6 +90,8 @@ public class MyClass {
 {% endhighlight %}
 
 Another useful methods in **java.lang.Object** is **toString** (convert an object into a string).
+
+Another reason why the **Object** class is useful is that it can be used as a *generic type*: we will explore this idea further in [Lecture 10](lecture10.html).
 
 Interfaces
 ==========
