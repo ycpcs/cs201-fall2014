@@ -187,14 +187,14 @@ public int countStringsContaining(ArrayList<String> strings, char ch) {
 }
 {% endhighlight %}
 
-Now instead of creating and using an **ArrayList**, we're creating and using an **ArrayList\<String\>**. You can read this as "ArrayList of String" elements.
+Now instead of creating and using an **ArrayList**, we're creating and using an **ArrayList&lt;String&gt;**. You can read this as "ArrayList of String" elements.
 
 The way to understand this works is by imagining that, in the case of declaring an **ArrayList** of **String** elements, the type parameter **E** is replaced with **String** everywhere in the text of the **ArrayList** class.
 
 Type parameters are a superior approach to generics because the Java compiler enforces the type parameter. So, for example:
 
--   You can't add a **Card** to an **ArrayList\<String\>**
--   You can't pass an **ArrayList\<Card\>** to a method which takes an **ArrayList\<String\>**
+-   You can't add a **Card** to an **ArrayList&lt;String&gt;**
+-   You can't pass an **ArrayList&lt;Card&gt;** to a method which takes an **ArrayList&lt;String&gt;**
 
 Because the type argument of a collection is enforced when objects are added to the collection, casts are not necessary when getting a reference back out of the collection.
 

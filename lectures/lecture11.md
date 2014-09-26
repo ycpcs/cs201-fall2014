@@ -6,9 +6,9 @@ title: "Lecture 11: Generic methods, functors"
 Implementing Generic Methods
 ============================
 
-Last time we saw how to define and use generic classes (in particular, **ArrayList\<E\>**).
+Last time we saw how to define and use generic classes (in particular, **ArrayList&lt;E&gt;**).
 
-We also saw how to *use* generic methods such as **Array.sort**. **Array.sort** is a generic method because it is possible to pass it a reference to an array of any element type **T** that implements the **Comparable\<T\>** interface. Generic methods are extremely useful because they allow us to define *generic algorithms* --- algorithms that can work with any kind of data.
+We also saw how to *use* generic methods such as **Array.sort**. **Array.sort** is a generic method because it is possible to pass it a reference to an array of any element type **T** that implements the **Comparable&lt;T&gt;** interface. Generic methods are extremely useful because they allow us to define *generic algorithms* --- algorithms that can work with any kind of data.
 
 Today we will discuss how to write a generic method.
 
@@ -33,7 +33,7 @@ On each iteration of the outer loop, the inner loop sweeps from the element 1 of
 
 The algorithm is called bubble sort because large elements "bubble" towards the end of the array.
 
-To implement this algorithm as a generic method, we need a type parameter to represent the type of the elements. We'll call this parameter **E**. Since the algorithm will need to compare adjacent elements, we will require that **E** is a type which is a subtype of the **Comparable\<E\>** interface:
+To implement this algorithm as a generic method, we need a type parameter to represent the type of the elements. We'll call this parameter **E**. Since the algorithm will need to compare adjacent elements, we will require that **E** is a type which is a subtype of the **Comparable&lt;E&gt;** interface:
 
 {% highlight java %}
 public static<E extends Comparable<E>> void bubbleSort(E[] arr) {
@@ -55,7 +55,7 @@ When we want to restrict a type parameter to require it to be a subtype of anoth
 E extends Comparable<E>
 {% endhighlight %}
 
-This causes **Comparable\<E\>** to be the *upper bound* of **E**. Essentially, we can't call the **bubbleSort** method on an array whose element type is not a type which implements **Comparable\<E\>**.
+This causes **Comparable&lt;E&gt;** to be the *upper bound* of **E**. Essentially, we can't call the **bubbleSort** method on an array whose element type is not a type which implements **Comparable&lt;E&gt;**.
 
 If you do not explicitly specify an upper bound on a type parameter, the upper bound is **Object**. An upper bound of **Object** means that there is no restriction on what types may be substituted for the type parameter, other than it must be an object or array type.
 
@@ -165,7 +165,7 @@ Comparators perform the same task as a **compareTo** method in classes implement
 
 For example, the built-in implementation of the **compareTo** method in the **String** class is case-sensitive, so the string "YCP" compares as less than "ycp". (This is because upper-case letters have lower character codes than lower-case letters.)
 
-We can define a case-insensitive sort order with a comparator. A comparator class is one which implements the **java.util.Comparator\<E\>** interface:
+We can define a case-insensitive sort order with a comparator. A comparator class is one which implements the **java.util.Comparator&lt;E&gt;** interface:
 
 {% highlight java %}
 public class CaseInsensitiveStringComparator implements Comparator<String> {
