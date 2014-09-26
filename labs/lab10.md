@@ -15,7 +15,7 @@ Right click on **StartLab.java** and choose **Run As&rarr;Java Application**. In
 Your Task
 =========
 
-**(1)** Modify your **Card** class so that rather than implementing the **Comparable** interface, it implements **Comparable\<Card\>**: instead of
+**(1)** Modify your **Card** class so that rather than implementing the **Comparable** interface, it implements **Comparable&lt;Card&gt;**: instead of
 
 {% highlight java %}
 public class Card implements Comparable {
@@ -63,11 +63,11 @@ public class Deck {
 }
 {% endhighlight %}
 
-Use an **ArrayList\<Card\>** (ArrayList of Cards) to store the cards.
+Use an **ArrayList&lt;Card&gt;** (ArrayList of Cards) to store the cards.
 
-The **get** method could use the **get** method of **ArrayList\<Card\>**.
+The **get** method could use the **get** method of **ArrayList&lt;Card&gt;**.
 
-The **drawCard** method could use the **remove(int)** method of **ArrayList\<Card\>**. (Use it to remove the last card in the list of cards, and return a reference to the removed card.)
+The **drawCard** method could use the **remove(int)** method of **ArrayList&lt;Card&gt;**. (Use it to remove the last card in the list of cards, and return a reference to the removed card.)
 
 Add a JUnit test class called **DeckTest**. It should contain tests for the **getNumCards**, **drawCard**, and **Shuffle** methods of the **Deck** class.
 
