@@ -17,6 +17,7 @@ course will be posted here.
 * [Resources](resources/index.html)
 * [Tutoring](tutoring.html)
 * [Practice Exams](practice/index.html)
+* [Code Examples](examples/index.html)
 
 ## News
 
