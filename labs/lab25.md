@@ -43,7 +43,7 @@ If you have the [Simple Marmoset Uploader Plugin](../resources/index.html) insta
 From a web browser
 ------------------
 
-Save the project (**CS201\_Lab23**) to a zip file by right-clicking it and choosing
+Save the project (**CS201\_Lab25**) to a zip file by right-clicking it and choosing
 
 > **Export...&rarr;Archive File**
 
