@@ -22,7 +22,8 @@ Sep 19 | [Lab 8: Inheriting Fields and Methods](lab08.html) | [CS201\_Lab08.zip]
 Sep 24 | [Lab 9: Comparable, Sorting](lab09.html) | [CS201\_Lab09.zip](CS201_Lab09.zip)
 Sep 26 | [Lab 10: Using Generic Containers and Algorithms](lab10.html) | [CS201\_Lab10.zip](CS201_Lab10.zip)
 Oct 1 | [Lab 11: Functors](lab11.html) | [CS201\_Lab11.zip](CS201_Lab11.zip)
-Oct 10 | [Lab 12: Benchmarking ArrayList](lab12.html) | [CS201\_Lab12.zip](CS201_Lab12.zip)
+Oct 8 | [Lab 12: Benchmarking ArrayList](lab12.html) | [CS201\_Lab12.zip](CS201_Lab12.zip)
+Oct 10 | TBD
 Oct 15 | [Lab 13: Iterators, Interleaving](lab13.html) | [CS201\_Lab13.zip](CS201_Lab13.zip)
 Oct 17 | [Lab 14: Generic Algorithms](lab14.html) | [CS201\_Lab14.zip](CS201_Lab14.zip)
 Oct 22 | [Lab 15: List Reversal](lab15.html) | [CS201\_Lab15.zip](CS201_Lab15.zip)
