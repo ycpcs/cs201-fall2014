@@ -1,50 +1,39 @@
 ---
 layout: default
-title: "Lab 21: Binomial Coefficient"
+title: "Lab 21: Proof By Induction"
 ---
 
-Binomial Coefficient
+Perfect binary trees
 ====================
 
-The binomial cooefficient C(n,k), often written "n choose k", is the number of ways to pick a subset of k elements from a collection of n elements. It may be defined recursively as follows:
+Deﬁnition: in a *perfect binary tree*, every node has either 0 or 2 child nodes, and all of the leaves (nodes with no child nodes) are at the lowest level of the tree.
 
-> C(n,0) = 1
->
-> C(n,n) = 1
->
-> C(n,k) = C(n-1,k) + C(n-1, k-1)
+Here are perfect binary trees of height 0, 1, and 2, respectively. The root node of each tree is drawn at the top.
 
-Getting Started
-===============
+> ![image](images/lab21/binTrees.png)
 
-Import the file [CS201\_Lab22.zip](CS201_Lab22.zip) into your Eclipse workspace. You will implement the **compute** method of the classes **NaiveRecursive** and **Memoization**.
+Proof by Induction
+==================
 
-As the names suggest, **NaiveRecursive** should be a literal recursive implementation of the binomial coefficient function, and **Memoization** should implement the binomial coefficient function using memoization to avoid repeatedly solving identical subproblems.
+In a *proof by induction*, you prove that some proposition is true for all integers [<i>b</i>..<i>n</i>], where *b* is a small value, usually 0 or 1. It has two parts:
 
-Because the binomial coefficient function takes two parameters, **n** and **k**, you will probably want your memoization table to be a two-dimensional array.
+1.  **Basis step**: Prove that the proposition is true for the integer *b*.
+2.  **Induction step**: Prove that if the proposition is true for *n*, it also holds for *n* + 1.
 
-Testing
-=======
+The induction step must use valid reasoning to show that the truth of proposition *n* logically implies the truth of proposition *n* + 1. In your induction step, explain your reasoning.
 
-Run the **main** method of the **TestDriver** class by right-clicking on **TestDriver.java** and choosing **Run As&rarr;Java Application**. The test driver solves C(n,k) for all values of k 0..n, for n=25, and measures the number of milliseconds needed to solve each problem. While the naive recursive implementation will take an appreciable amount of time, the implementation using memoization should execute very quickly.
+Your Task
+=========
+
+**Problem 1**: Prove by induction that a perfect binary tree of height *n* has 2<sup><i>n</i></sup> leaves.
+
+**Problem 2**: Prove by induction that a perfect binary tree of height *n* has 2<sup><i>n</i>+1</sup> − 1 nodes. Hint: use the result from problem 1 in your proof.
+
+Write your proof in a **plain text** document. (Use either notepad or Notepad++ to compose the document.)
 
 Submitting
 ==========
 
-When you are done, submit the lab to the Marmoset server using either of the methods below.
-
-From Eclipse
-------------
-
-If you have the [Simple Marmoset Uploader Plugin](../resources.html) installed, select the project (**CS201\_Lab22**) in the package explorer and then press the blue up arrow button in the toolbar. Enter your Marmoset username and password when prompted.
-
-From a web browser
-------------------
-
-Save the project (**CS201\_Lab22**) to a zip file by right-clicking it and choosing
-
-> **Export...&rarr;Archive File**
-
-Upload the saved zip file to the Marmoset server as **lab22**. The server URL is
+Upload the plain text document containing your two proofs to the Marmoset server as **lab21**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>

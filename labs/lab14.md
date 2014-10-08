@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Lab 14: Generic Algorithms"
+title: "Lab 14: Iterators, Interleaving"
 ---
 
-Getting Started
+Getting started
 ===============
 
 Download [CS201\_Lab14.zip](CS201_Lab14.zip). Import it into Eclipse (**File&rarr;Import...&rarr;Existing Projects into Workspace&rarr;Archive File**.) You should see a project called **CS201\_Lab14** in the package explorer.
@@ -11,35 +11,14 @@ Download [CS201\_Lab14.zip](CS201_Lab14.zip). Import it into Eclipse (**File&rar
 Your Task
 =========
 
-Your task is to implement the five static methods defined in the **Algorithms** class.
+Your task is to implement two generic methods in the **Algorithm** class: **interleave** and **mergeSortedLists**. Each method takes references to two collections as parameters.
 
-**static&lt;E extends Comparable&lt;E&gt;&gt; E findMin(Collection&lt;E&gt; c)**  
-This method should return the minimum (smallest) value in the given **Collection**. Since each element belongs to a class implementing the **Comparable&lt;E&gt;** interface, you can use the **compareTo** method to compare element values.
+-   The **interleave** method takes two collections, uses iterators to traverse their elements, and returns a list in which the elements in the original collections are "interleaved". For example, if the collections are lists containing **(A, B, C)** and **(D, E, F)** respectively, the result will be a list containing **(A, D, B, E, C, F)**.
+-   The **mergeSortedLists** method takes two sorted lists and returns a single list containing all of the elements in the two original lists, in sorted order. For example, if the original lists are **(1, 4, 5)** and **(2, 3, 6)** then the result list would be **(1, 2, 3, 4, 5, 6)**.
 
-**static&lt;E extends Comparable&lt;E&gt;&gt; E findMax(Collection&lt;E&gt; c)**  
-Like **findMin** above, but return the maximum element value instead of the minimum.
+Each method is accompanied by a detailed documentation comment describing how the method should work, and providing hints.
 
-**static&lt;E&gt; E findMin(Collection&lt;E&gt; c, Comparator&lt;E&gt; comp)**  
-Like the version of **findMin** that just takes a **Collection**, but uses the **Comparator** parameter to do the element comparisons.
-
-**static&lt;E&gt; E findMax(Collection&lt;E&gt; c, Comparator&lt;E&gt; comp)**  
-Like **findMin** above, but return the maximum element value instead of the minimum.
-
-**static&lt;E&gt; int sequentialSearch(List&lt;E&gt; list, E searchVal)**  
-Do a sequential search of the given **List**. Return the index of the first occurrence of an element comparing as equal to **searchVal**, or -1 if **searchVal** does not occur in the list. Use the **equals** method to do the comparisons.
-
-A JUnit test class, **AlgorithmsTest**, is provided.
-
-Super-duper extra challenge
-===========================
-
-*Optional*: if you finish the above tasks, and your brain isn't completely twisted in knots, rewrite the four **findMin** and **findMax** methods so that three of them are implemented by making a call to the fourth.
-
-**Hint**: Leave your **static&lt;E&gt; E findMin(Collection&lt;E&gt; c, Comparator&lt;E&gt; comp)** as it is. Change the other methods to call it.
-
-**Another hint**: Defining one or more new **Comparator** classes will help.
-
-Let me know if you figure this one out. I may award a prize.
+The **AlgorithmTest** JUnit test class has unit tests for each method. Take a look at the tests if you are not sure about how the method is intended to work.
 
 Submitting
 ==========

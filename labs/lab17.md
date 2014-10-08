@@ -1,90 +1,50 @@
 ---
 layout: default
-title: "Lab 17: Palindromes"
+title: "Lab 17: Parallel Estimation of π"
 ---
 
-Getting started
+Getting Started
 ===============
 
-Import [CS201\_Lab17.zip](CS201_Lab17.zip) (**File&rarr;Import...&rarr;General&rarr;Existing Projects into Workspace&rarr;Archive File**). You should see a project called **CS201\_Lab17** in the Package Explorer.
+Download [CS201\_Lab17.zip](CS201_Lab17.zip). Import it into Eclipse (**File&rarr;Import...&rarr;Existing Projects into Workspace&rarr;Archive File**.) You should see a project called **CS201\_Lab17** in the package explorer.
+
+Estimating π
+============
+
+An approximation of π can be computed by generating random points in a square of some arbitrary size centered at the origin of the x/y plane. Each time one of the random points falls within a circle centered at the origin (where the circle completely fills the square), increase a counter. After some number of random points have been generated, divide the counter (how many random points were within the circle) by the total number of random points. This number will approximate the area of a circle of radius 0.5. We know that for a circle, the area *a* is computed by the equation
+
+> *a* = π*r*<sup>2</sup>
+
+Letting *r* equal 0.5, and re-arranging to solve for π,
+
+> π = *a* / .25
+
+For example, here is a picture showing 5000 random points within a 200 by 200 square centered at the origin, along with an outline of a circle within the square:
+
+> ![image](images/lab17/computePi.png)
+
+Based on these 5000 points, we estimate π to be 3.0936. This is obviously not very accurate: computing more random points would lead to a more accurate estimate.
 
 Your Task
 =========
 
-A phrase is a palindrome when the sequence of the letters in the phrase is the same both forwards an backwards, ignoring space and punctuation. Some examples:
+Your task is to use the technique described above to estimate π using 100,000,000 (one hundred million) random points.
 
-> Rise to vote, sir
->
-> Able was I ere I saw Elba
->
-> A man, a plan, a canal - Panama!
->
-> A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal - Panama?
->
-> A Danish custard? Drat such sin, Ada!
+Your program should support two computation techniques:
 
-Your task is to write a program which uses a stack to determine whether or not a phrase is a palindrome. A starting point is provided in the **CheckPalindrome** class, whose **main** method reads lines of input from **System.in**. You should modify the loop so that after each line of input is read, it checks the line to see if it is a palindrome, and then prints either "Palindrome" or "Not a palindrome" to **System.out**.
+-   purely sequential computation (using a single thread)
+-   parallel computation using 2 threads
 
-Use two collections: a stack of **Character** values and a queue of **Character** values:
+Your program should measure the number of milliseconds needed to estimate π using both techniques. Is the parallel version faster? If so, how much faster?
 
-{% highlight java %}
-Stack<Character> stack = new Stack<Character>();
-Queue<Character> queue = new LinkedList<Character>();
-{% endhighlight %}
+Hints
+-----
 
-Note that the **Character** type is essentially equivalent to **char**, but because it is a class, **Character** values can be stored in collections such as **Stack**s. The Java compiler will automatically convert between **char** and **Character** values.
+Create instances of the **PiTask** class to perform the computation (or part of the computation in the parallel version). You will need to implement the **run** method of this class so that generates random points and counts how many fall within the circle.
 
-You will need to think about how the stack and queue can help you determine whether or not the input is a palindrome.
+In the sequential computation, create one **PiTask** object and have it compute all 100,000,000 random points.
 
-Here is an example run (user input in **bold**):
-
-<pre>
-<b>A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal - Panama?</b>
-Palindrome
-<b>Rise to vote, sir</b>
-Palindrome
-<b>Boy howdy!</b>
-Not a palindrome
-<b>quit</b>
-<i>program exits</i>
-</pre>
-
-Requirements and hints
-======================
-
-You will need to treat a String object as a sequence of characters. You can use the **length** and **charAt** methods to get the length of a string and the value of a single character of the string, respectively. For example, here is how to iterate over all of the characters in a **String**:
-
-{% highlight java %}
-String line = ...
-for (int i = 0; i < line.length(); i++) {
-    char c = line.charAt(i);
-
-    // Do something with c
-}
-{% endhighlight %}
-
-Your program should ignore all characters other than letters. You can find out whether or not a character is a letter using the **Character.isLetter** method:
-
-{% highlight java %}
-char c = ...
-
-if (Character.isLetter(c)) {
-    // c is a letter
-}
-{% endhighlight %}
-
-You should also ignore case. One way to do this is by converting all letters to lower-case:
-
-{% highlight java %}
-c = Character.toLowerCase(c);
-{% endhighlight %}
-
-Running the program
-===================
-
-Run the **CheckPalindrome** class as a Java Application (right-click, **Run As&rarr;Java Application**).
-
-Type in some phrases and make sure that the program can successfully distinguish palindromes from non-palindromes.
+In the parallel computation, create two **PiTask** objects and have each compute 50,000,000 points. The total number of points that fell within the circle will thus be the sum of the counts computed by each of the two tasks.
 
 Submitting
 ==========

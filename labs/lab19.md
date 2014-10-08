@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Lab 19: Recursion"
+title: "Lab 19: Word Count"
 ---
 
-Getting Started
+Getting started
 ===============
 
 Import [CS201\_Lab19.zip](CS201_Lab19.zip) (**File&rarr;Import...&rarr;General&rarr;Existing Projects into Workspace&rarr;Archive File**). You should see a project called **CS201\_Lab19** in the Package Explorer.
@@ -11,23 +11,47 @@ Import [CS201\_Lab19.zip](CS201_Lab19.zip) (**File&rarr;Import...&rarr;General&r
 Your Task
 =========
 
-Implement each static method in the class called **Recursion**. Each method has comments describing what it should do.
+Complete the program so that it counts the number of occurrences of words in the text file whose name is entered by the user, and then prints out a histogram showing the number of occurrences of each word (in lower case), listing the words alphabetically.
 
-When you implement a method, remove the line of code reading
+Code is provided which
 
-{% highlight java %}
-throw new UnsupportedOperationException("Not implemented yet");
-{% endhighlight %}
+-   opens the file
+-   reads each line of the file
+-   extracts each word (sequence of letters) from the lines of the file, converting each word to lower case
 
-A JUnit test class called **RecursionTest** contains test cases for each method.
+An example text file, **gettysburg.txt**, is provided for you to use when testing your program.
 
-You must use recursion in each method. **Do not use a loop in any of the methods.**
+Here is partial output from running the program on this file (user input in **bold**):
 
-As you think about how to implement each method, consider:
+<pre>
+Read which file? <b>gettysburg.txt</b>
+Word counts:
+a          : =======
+above      : =
+add        : =
+advanced   : =
+ago        : =
+all        : =
+altogether : =
+and        : ======
+any        : =
+are        : ===
+as         : =
+battle     : =
+</pre>
 
--   What is a base case (or base cases) that can be solved without using recursion?
--   How can you find a subproblem which has the same form as the overall problem?
--   How can you extend the solution to the subproblem to solve the overall problem?
+The length of the "bar" following each word indicates the number of occurrences of that word. For example, the word "and" occurred 6 times, so there are six "=" characters making up the bar for that word.
+
+There are 126 more lines of output.
+
+Hints
+=====
+
+Use a map with key type **String** and value type **Integer** to count the number of occurrences of each word.
+
+You are required to list the words alphabetically when displaying the histogram. Can you choose a built-in implementation of the **Map** interface that will make this job easier?
+
+You should determine the length of the longest word so that the "bars" of the histogram will all start in the same column when printed.
 
 Submitting
 ==========

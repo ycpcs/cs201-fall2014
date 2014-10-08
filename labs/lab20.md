@@ -1,39 +1,51 @@
 ---
 layout: default
-title: "Lab 20: Proof By Induction"
+title: "Lab 20: Recursion"
 ---
 
-Perfect binary trees
-====================
+Getting Started
+===============
 
-Deﬁnition: in a *perfect binary tree*, every node has either 0 or 2 child nodes, and all of the leaves (nodes with no child nodes) are at the lowest level of the tree.
-
-Here are perfect binary trees of height 0, 1, and 2, respectively. The root node of each tree is drawn at the top.
-
-> ![image](images/lab21/binTrees.png)
-
-Proof by Induction
-==================
-
-In a *proof by induction*, you prove that some proposition is true for all integers [<i>b</i>..<i>n</i>], where *b* is a small value, usually 0 or 1. It has two parts:
-
-1.  **Basis step**: Prove that the proposition is true for the integer *b*.
-2.  **Induction step**: Prove that if the proposition is true for *n*, it also holds for *n* + 1.
-
-The induction step must use valid reasoning to show that the truth of proposition *n* logically implies the truth of proposition *n* + 1. In your induction step, explain your reasoning.
+Import [CS201\_Lab20.zip](CS201_Lab20.zip) (**File&rarr;Import...&rarr;General&rarr;Existing Projects into Workspace&rarr;Archive File**). You should see a project called **CS201\_Lab20** in the Package Explorer.
 
 Your Task
 =========
 
-**Problem 1**: Prove by induction that a perfect binary tree of height *n* has 2<sup><i>n</i></sup> leaves.
+Implement each static method in the class called **Recursion**. Each method has comments describing what it should do.
 
-**Problem 2**: Prove by induction that a perfect binary tree of height *n* has 2<sup><i>n</i>+1</sup> − 1 nodes. Hint: use the result from problem 1 in your proof.
+When you implement a method, remove the line of code reading
 
-Write your proof in a **plain text** document. (Use either notepad or Notepad++ to compose the document.)
+{% highlight java %}
+throw new UnsupportedOperationException("Not implemented yet");
+{% endhighlight %}
+
+A JUnit test class called **RecursionTest** contains test cases for each method.
+
+You must use recursion in each method. **Do not use a loop in any of the methods.**
+
+As you think about how to implement each method, consider:
+
+-   What is a base case (or base cases) that can be solved without using recursion?
+-   How can you find a subproblem which has the same form as the overall problem?
+-   How can you extend the solution to the subproblem to solve the overall problem?
 
 Submitting
 ==========
 
-Upload the plain text document containing your two proofs to the Marmoset server as **lab21**. The server URL is
+When you are done, submit the lab to the Marmoset server using either of the methods below.
+
+From Eclipse
+------------
+
+If you have the [Simple Marmoset Uploader Plugin](../resources/index.html) installed, select the project (**CS201\_Lab20**) in the package explorer and then press the blue up arrow button in the toolbar. Enter your Marmoset username and password when prompted.
+
+From a web browser
+------------------
+
+Save the project (**CS201\_Lab20**) to a zip file by right-clicking it and choosing
+
+> **Export...&rarr;Archive File**
+
+Upload the saved zip file to the Marmoset server as **lab20**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>

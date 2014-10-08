@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lab 16: Parallel Estimation of π"
+title: "Lab 16: List Reversal"
 ---
 
 Getting Started
@@ -8,46 +8,54 @@ Getting Started
 
 Download [CS201\_Lab16.zip](CS201_Lab16.zip). Import it into Eclipse (**File&rarr;Import...&rarr;Existing Projects into Workspace&rarr;Archive File**.) You should see a project called **CS201\_Lab16** in the package explorer.
 
-Estimating π
-============
-
-An approximation of π can be computed by generating random points in a square of some arbitrary size centered at the origin of the x/y plane. Each time one of the random points falls within a circle centered at the origin (where the circle completely fills the square), increase a counter. After some number of random points have been generated, divide the counter (how many random points were within the circle) by the total number of random points. This number will approximate the area of a circle of radius 0.5. We know that for a circle, the area *a* is computed by the equation
-
-> *a* = π*r*<sup>2</sup>
-
-Letting *r* equal 0.5, and re-arranging to solve for π,
-
-> π = *a* / .25
-
-For example, here is a picture showing 5000 random points within a 200 by 200 square centered at the origin, along with an outline of a circle within the square:
-
-> ![image](images/lab16/computePi.png)
-
-Based on these 5000 points, we estimate π to be 3.0936. This is obviously not very accurate: computing more random points would lead to a more accurate estimate.
-
 Your Task
 =========
 
-Your task is to use the technique described above to estimate π using 100,000,000 (one hundred million) random points.
+Part 1 - Reversing a List using get and set
+-------------------------------------------
 
-Your program should support two computation techniques:
+Implement the method called **reverseUsingGetAndSet** in the **Reverse** class. This method should reverse the elements of the **List&lt;E&gt;** object passed as the parameter by calling the **get(int)** and **set(int, E)** methods. A possible algorithm is suggested in the comment inside the method.
 
--   purely sequential computation (using a single thread)
--   parallel computation using 2 threads
+You can run the **ReverseTest** JUnit test class to test your implementation of the **reverseUsingGetAndSet** method.
 
-Your program should measure the number of milliseconds needed to estimate π using both techniques. Is the parallel version faster? If so, how much faster?
+Part 2 - Benchmark List reversal for ArrayList and LinkedList
+-------------------------------------------------------------
 
-Hints
------
+Once the **reverseUsingGetAndSet** method is implemented, write a benchmark program which measures how long the reversal takes for both **ArrayList&lt;E&gt;** and **LinkedList&lt;E&gt;** objects with 10,000, 20,000, 30,000, etc. elements, up to and including 100,000 elements.
 
-Create instances of the **PiTask** class to perform the computation (or part of the computation in the parallel version). You will need to implement the **run** method of this class so that generates random points and counts how many fall within the circle.
+Add your benchmarking code to the **Benchmark** class. The **main** method is already partly implemented. You can call the **createArrayList** and **createLinkedList** methods to create array lists and linked lists with a specified number of elements.
 
-In the sequential computation, create one **PiTask** object and have it compute all 100,000,000 random points.
+Output each data point in the format
 
-In the parallel computation, create two **PiTask** objects and have each compute 50,000,000 points. The total number of points that fell within the circle will thus be the sum of the counts computed by each of the two tasks.
+> numElements,arrayListTime,linkedListTime
+
+where times are measured in milliseconds. (See the description for [Lab 12](lab12.html) for how to measure the execution time of a chunk of code. Don't forget to call the **System.gc()** method before starting the timing, to avoid including garbage-collection overhead in your measurement.)
+
+You should see output something like the following:
+
+    10000,12,442
+    20000,0,1352
+    30000,1,4270
+    40000,1,8759
+    50000,2,14825
+    60000,2,23214
+    70000,3,35525
+    80000,2,44721
+    90000,2,58349
+    100000,4,70634
+
+Note that it will probably take a few minutes for the entire benchmark to complete.
+
+Once you have collected your data, plot it in Excel. Your plot should look something like this:
+
+> ![image](images/lab16/benchPlot.png)
+
+Copy your Excel file into the Eclipse project. (Put it in the subdirectory of your Eclipse workspace called **CS201\_Lab16**, and in Eclipse right-click on the project and choose **Refresh**.)
 
 Submitting
 ==========
+
+**Make sure that you have included your Excel file in the project!**
 
 When you are done, submit the lab to the Marmoset server using either of the methods below.
 

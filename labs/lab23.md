@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lab 23: Shell Sort"
+title: "Lab 23: Advanced Recursion"
 ---
 
 Getting Started
@@ -11,83 +11,60 @@ Import [CS201\_Lab23.zip](CS201_Lab23.zip) (**File&rarr;Import...&rarr;General&r
 Your Task
 =========
 
-You have two tasks: implementing Shell Sort, and benchmarking Insertion Sort vs. Shell Sort.
+Implement the following static methods in the class called **Recursion**:
 
-Task 1 - Implement Shell Sort
------------------------------
+-   **mergeSortWork**
+-   **permute**
 
-In the **Sort** class you will find an method called **insertionSortWork**:
+Note: this lab is challenging! A good goal would be to get at least one of the methods working. If you get both methods working, you have earned a recursion brown belt.
 
-{% highlight java %}
-public static<E extends Comparable<E>> void insertionSortWork(E[] arr, int startIndex, int gap) {
-{% endhighlight %}
+mergeSortWork
+-------------
 
-This method implements an insertion sort starting at the element with index **startIndex** and skipping over every **gap** elements. For example, the call
+Merge sort is a simple but highly efficient sorting algorithm. It works by sorting a region of a sequence from a given start index (inclusive) to a given end index (exclusive).
 
-{% highlight java %}
-insertionSortWork(arr, 1, 3);
-{% endhighlight %}
+The algorithm works as follows:
 
-would sort every third element of the array, starting with the element at index 1.
+1.  if the region has less than 2 elements, do nothing (base case)
+2.  otherwise,
 
-The **insertionSort** method consists of a single call to the **insertionSortWork** method:
+    1.  divide the region into halves and recursively sort each half
+    2.  merge the two sorted halves of the region into a merged list containing all of the elements in the region, in sorted order
+    3.  copy the elements from the merged list back to the region of the list being sorted
 
-{% highlight java %}
-public static<E extends Comparable<E>> void insertionSort(E[] arr) {
-    insertionSortWork(arr, 0, 1);
-}
-{% endhighlight %}
+A method called **merge** is provided to merge the elements in two sorted halves of a region into a single sorted list.
 
-Your job is to complete the implementation of the **shellSort** method. This method should make use of the **insertionSortWork** method to carry out a shell sort on the parameter array.
+permute
+-------
 
-You can refer to the [lecture notes](../lecture/lecture23.html) for an explanation of Shell Sort.
+A *permutation* of a sequence is another sequence containing all of the values in the original sequence, but in which those values might be in a different order.
 
-Suggestion: use **arr.length / 2** as the initial gap, and use the following method to decrease the gap:
+The **permute** method takes a list and returns a set containing all possible permutations of that list.
 
-{% highlight java %}
-private static int nextGap(int gap) {
-    if (gap == 1) {
-        return 0;
-    }
-    int next = (int) (gap / 2.2);
-    if (next == 0) {
-        next = 1;
-    }
-    return next;
-}
-{% endhighlight %}
+**There is a very simple way to implement this method using recursion.** Think about what an appropriate base case for this method might be. Then think about how you might use recursion to work towards this base case.
 
-You can use the provided **SortTest** JUnit test class to test your Shell Sort implementation.
+Hints:
 
-Task 2 - Benchmark Insertion Sort vs. Shell Sort
-------------------------------------------------
+-   Use **new HashSet&lt;List&lt;E&gt;&gt;()** to create a set of lists to return from the method.
+-   You will probably need to make **multiple** recursive calls.
+-   A recursion on a list will typically make progress by making the list shorter. You can make a list **y** shorter by calling **y.remove(***index***)**, where *index* is the index of the element you want to remove. Make sure you do something with the element you removed.
 
-Your second task is to measure the amount of time Insertion Sort and Shell Sort take to sort arrays of increasing size, starting at 10,000 elements, and increasing by 10,000 up to 100,000 elements.
+To simplify your algorithm you will probably want to avoid directly modifying a list. Instead, make a copy and modify the copy. You can make a copy of a list by creating a new **ArrayList** and passing the list you want to copy to the constructor:
 
-Modify the code in the **main** method of the **Benchmark** class. The output should look something like this:
+Approach
+--------
 
-    10000,156,5
-    20000,531,5
-    30000,1197,8
-    40000,2143,11
-    50000,3516,15
-    60000,5050,18
-    70000,6977,22
-    80000,9368,27
-    90000,12188,29
-    100000,15409,33
+When you implement a method, remove the line of code reading
 
-where each data point has the form
+    throw new UnsupportedOperationException("Not implemented yet");
 
-> *numElements*,*insertionSortTime*,*shellSortTime*
+A JUnit test class called **RecursionTest** contains test cases for each method.
 
-Your times will likely be different, but the overall trend should be similar.
+As you think about how to implement each method, consider:
 
-Plot the data in excel: your plot should look something like the following:
-
-> ![image](images/lab23/benchPlot.png)
-
-Copy your Excel file into the Eclipse project. (Put it in the subdirectory of your Eclipse workspace called **CS201\_Lab23**, and in Eclipse right-click on the project and choose **Refresh**.)
+-   What is a base case (or base cases) that can be solved without using recursion?
+-   How can you find a subproblem which has the same form as the overall problem?
+-   How can you extend the solution to the subproblem to solve the overall problem?
 
 Submitting
 ==========

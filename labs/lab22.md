@@ -1,70 +1,32 @@
 ---
 layout: default
-title: "Lab 20: Advanced Recursion"
+title: "Lab 22: Binomial Coefficient"
 ---
+
+Binomial Coefficient
+====================
+
+The binomial cooefficient C(n,k), often written "n choose k", is the number of ways to pick a subset of k elements from a collection of n elements. It may be defined recursively as follows:
+
+> C(n,0) = 1
+>
+> C(n,n) = 1
+>
+> C(n,k) = C(n-1,k) + C(n-1, k-1)
 
 Getting Started
 ===============
 
-Import [CS201\_Lab20.zip](CS201_Lab20.zip) (**File&rarr;Import...&rarr;General&rarr;Existing Projects into Workspace&rarr;Archive File**). You should see a project called **CS201\_Lab20** in the Package Explorer.
+Import the file [CS201\_Lab22.zip](CS201_Lab22.zip) into your Eclipse workspace. You will implement the **compute** method of the classes **NaiveRecursive** and **Memoization**.
 
-Your Task
-=========
+As the names suggest, **NaiveRecursive** should be a literal recursive implementation of the binomial coefficient function, and **Memoization** should implement the binomial coefficient function using memoization to avoid repeatedly solving identical subproblems.
 
-Implement the following static methods in the class called **Recursion**:
+Because the binomial coefficient function takes two parameters, **n** and **k**, you will probably want your memoization table to be a two-dimensional array.
 
--   **mergeSortWork**
--   **permute**
+Testing
+=======
 
-Note: this lab is challenging! A good goal would be to get at least one of the methods working. If you get both methods working, you have earned a recursion brown belt.
-
-mergeSortWork
--------------
-
-Merge sort is a simple but highly efficient sorting algorithm. It works by sorting a region of a sequence from a given start index (inclusive) to a given end index (exclusive).
-
-The algorithm works as follows:
-
-1.  if the region has less than 2 elements, do nothing (base case)
-2.  otherwise,
-
-    1.  divide the region into halves and recursively sort each half
-    2.  merge the two sorted halves of the region into a merged list containing all of the elements in the region, in sorted order
-    3.  copy the elements from the merged list back to the region of the list being sorted
-
-A method called **merge** is provided to merge the elements in two sorted halves of a region into a single sorted list.
-
-permute
--------
-
-A *permutation* of a sequence is another sequence containing all of the values in the original sequence, but in which those values might be in a different order.
-
-The **permute** method takes a list and returns a set containing all possible permutations of that list.
-
-**There is a very simple way to implement this method using recursion.** Think about what an appropriate base case for this method might be. Then think about how you might use recursion to work towards this base case.
-
-Hints:
-
--   Use **new HashSet&lt;List&lt;E&gt;&gt;()** to create a set of lists to return from the method.
--   You will probably need to make **multiple** recursive calls.
--   A recursion on a list will typically make progress by making the list shorter. You can make a list **y** shorter by calling **y.remove(***index***)**, where *index* is the index of the element you want to remove. Make sure you do something with the element you removed.
-
-To simplify your algorithm you will probably want to avoid directly modifying a list. Instead, make a copy and modify the copy. You can make a copy of a list by creating a new **ArrayList** and passing the list you want to copy to the constructor:
-
-Approach
---------
-
-When you implement a method, remove the line of code reading
-
-    throw new UnsupportedOperationException("Not implemented yet");
-
-A JUnit test class called **RecursionTest** contains test cases for each method.
-
-As you think about how to implement each method, consider:
-
--   What is a base case (or base cases) that can be solved without using recursion?
--   How can you find a subproblem which has the same form as the overall problem?
--   How can you extend the solution to the subproblem to solve the overall problem?
+Run the **main** method of the **TestDriver** class by right-clicking on **TestDriver.java** and choosing **Run As&rarr;Java Application**. The test driver solves C(n,k) for all values of k 0..n, for n=25, and measures the number of milliseconds needed to solve each problem. While the naive recursive implementation will take an appreciable amount of time, the implementation using memoization should execute very quickly.
 
 Submitting
 ==========
@@ -74,15 +36,15 @@ When you are done, submit the lab to the Marmoset server using either of the met
 From Eclipse
 ------------
 
-If you have the [Simple Marmoset Uploader Plugin](../resources/index.html) installed, select the project (**CS201\_Lab20**) in the package explorer and then press the blue up arrow button in the toolbar. Enter your Marmoset username and password when prompted.
+If you have the [Simple Marmoset Uploader Plugin](../resources.html) installed, select the project (**CS201\_Lab22**) in the package explorer and then press the blue up arrow button in the toolbar. Enter your Marmoset username and password when prompted.
 
 From a web browser
 ------------------
 
-Save the project (**CS201\_Lab20**) to a zip file by right-clicking it and choosing
+Save the project (**CS201\_Lab22**) to a zip file by right-clicking it and choosing
 
 > **Export...&rarr;Archive File**
 
-Upload the saved zip file to the Marmoset server as **lab20**. The server URL is
+Upload the saved zip file to the Marmoset server as **lab22**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>
