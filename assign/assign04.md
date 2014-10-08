@@ -35,7 +35,7 @@ These are the classes you will need to complete:
 * **Selection** &mdash; a sequence of one or more cards taken from the main deck or a tableau pile as the first step in moving cards from one pile to another
 * **KlondikeController** &mdash; handles all of the game logic and updates to the model
 
-There are very detailed comments for each method you will need to implement.
+There are very detailed comments for each method you will need to implement.  You can also view the [API documentation](assign04javadoc/index.html) for the project.
 
 The unit tests for **KlondikeController** are the most extensive and detailed tests, since they test the game logic.  Note that these tests use two saved game states.  You can view the image files `testgame.png` and `testgame2.png`, in the same directory as the test classes, to view these game states.
 
