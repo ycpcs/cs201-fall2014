@@ -185,7 +185,7 @@ So, what is <i>n</i><sub>iters</sub>? It is a function of two parameters:
 
 where <i>n</i> is the number of elements in the ArrayList, and <i>i</i> is the index of the element being removed.
 
-So, when we call **remove** on an ArrayList with &lt;i&gt;n&lt;/i&gt; elements, it will take a constant amount of time to remove the last element, and time proportional to &lt;i&gt;n&lt;/i&gt; - 1 to remove the first element. This makes sense: more work is required to shift over the elements to the right of the one we're removing the closer the removed element is to the beginning of the array.
+So, when we call **remove** on an ArrayList with *n*/*i* elements, it will take a constant amount of time to remove the last element, and time proportional to *n* - 1 to remove the first element. This makes sense: more work is required to shift over the elements to the right of the one we're removing the closer the removed element is to the beginning of the array.
 
 Worst case
 ----------
@@ -199,7 +199,7 @@ ignoring <i>work</i><sub>rest</sub>.
 Average case
 ------------
 
-Sometimes, we might be interested in knowing what the *average-case* running time is. To say something meaningful about the average case, we need to know what possible inputs the algorithm might receive, and a probability distribution specifying how likely each possible input is. For the case of the ArrayList remove algorithm, the possible inputs are the index values 0 .. &lt;i&gt;n-1&lt;/i&gt;. Let's say that all inputs are equally likely. That means the average case running time will be
+Sometimes, we might be interested in knowing what the *average-case* running time is. To say something meaningful about the average case, we need to know what possible inputs the algorithm might receive, and a probability distribution specifying how likely each possible input is. For the case of the ArrayList remove algorithm, the possible inputs are the index values 0 .. *n*-1. Let's say that all inputs are equally likely. That means the average case running time will be
 
 > ((<i>n</i>-1) + (<i>n</i>-2) + ... + 1 + 0) / <i>n</i>
 
