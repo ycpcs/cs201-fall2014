@@ -70,6 +70,16 @@ This one is similar to Problem 3: the inner loop is dependent on the outer loop.
 ## Problem 6
 
 {% highlight java %}
+for (int i = 1; i < N; i = i * 2) {
+    CODE
+}
+{% endhighlight %}
+
+Note that **i** is doubling on each loop iteration: how does that affect the number of times the loop will execute?
+
+## Problem 7
+
+{% highlight java %}
 for (int i = 0; i < N; i++) {
     for (int j = 0; j < N; j++) {
         for (int k = 0; k < N; k++) {
