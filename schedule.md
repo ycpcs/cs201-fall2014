@@ -22,7 +22,7 @@ This page lists the schedule for the course.  Please note that the schedule may 
 > Oct 1 | [Lecture 11: Generic methods, functors](lectures/lecture11.html), 4.8
 > Oct 3 | **Exam 1**
 > Oct 8 | [Lecture 12: Analysis of Algorithms](lectures/lecture12.html), 5.1-5.3 <br> [Lecture 12a: Code Comments](lectures/lecture12a.html)
-> Oct 10 | [Lecture 13: Big-O](lectures/lecture13.html), 5.4-5.8
+> Oct 10 | [Lecture 13: Analysis of Algorithms, Big-O](lectures/lecture13.html), 5.4-5.8
 > Oct 15 | [Lecture 14: Collections, Iterators](lectures/lecture14.html), 6.1-6.3
 > Oct 17 | [Lecture 15: Generic Algorithms](lectures/lecture15.html), 6.4
 > Oct 22 | [Lecture 16: Lists](lectures/lecture16.html), 6.5
