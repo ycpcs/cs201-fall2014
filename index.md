@@ -21,6 +21,7 @@ course will be posted here.
 
 ## News
 
+* **Oct 14** - [Solutions](labs/lab13soln.pdf) to [Lab 13](labs/lab13.html) have been posted.
 * **Oct 8** - [Assignment 4](assign/assign04.html) has been posted.  Milestone 1 is due Wednesday, Oct 22nd by 11:59 PM.  Milestone 2 is due Friday, Oct 31st by 11:59 PM.
 * **Oct 1** - Solutions to the first practice exam are posted on the [Practice Exams](practice/index.html) page.
 * **Oct 1** - The [Code Examples](examples/index.html) has links to code examples shown in class.
