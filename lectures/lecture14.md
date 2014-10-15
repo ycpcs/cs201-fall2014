@@ -79,7 +79,7 @@ In Java, all iterator classes implement the interface **Iterator&lt;E&gt;** Here
 
 Iterators serve two purposes. First, the allow the creation of generic algorithms that can work with any kind of collection. Such algorithms can use an iterator to traverse the elements of the collection without having to know anything about how the collection is implemented.
 
-The second purpose is to allow elements to be removed safely while a traversal of the collection is in progrss. For example, consider the following method, intended to remove all of the even integers from a list:
+The second purpose is to allow elements to be removed safely while a traversal of the collection is in progress. For example, consider the following method, intended to remove all of the even integers from a list:
 
 {% highlight java %}
 public static void removeEvens(List<Integer> nums) {
