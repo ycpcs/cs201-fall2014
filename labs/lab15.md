@@ -11,7 +11,7 @@ Download [CS201\_Lab15.zip](CS201_Lab15.zip). Import it into Eclipse (**File&rar
 Your Task
 =========
 
-Your task is to implement the five static methods defined in the **Algorithms** class.
+Your task is to implement the five static methods defined in the **Algorithms** class.  *Note*: implement these yourself using an explicit traversal of the input collection, i.e., don't just call a method in **java.util.Collections**.
 
 **static&lt;E extends Comparable&lt;E&gt;&gt; E findMin(Collection&lt;E&gt; c)**  
 This method should return the minimum (smallest) value in the given **Collection**. Since each element belongs to a class implementing the **Comparable&lt;E&gt;** interface, you can use the **compareTo** method to compare element values.

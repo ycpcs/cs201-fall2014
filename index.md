@@ -18,9 +18,11 @@ course will be posted here.
 * [Tutoring](tutoring.html)
 * [Practice Exams](practice/index.html)
 * [Code Examples](examples/index.html)
+* [Java 7 API documentation](http://docs.oracle.com/javase/7/docs/api/)
 
 ## News
 
+* **Oct 17** - Added a link (above) to the [Java 7 API documentation](http://docs.oracle.com/javase/7/docs/api/).
 * **Oct 14** - [Solutions](labs/lab13soln.pdf) to [Lab 13](labs/lab13.html) have been posted.
 * **Oct 8** - [Assignment 4](assign/assign04.html) has been posted.  Milestone 1 is due Wednesday, Oct 22nd by 11:59 PM.  Milestone 2 is due Friday, Oct 31st by 11:59 PM.
 * **Oct 1** - Solutions to the first practice exam are posted on the [Practice Exams](practice/index.html) page.
