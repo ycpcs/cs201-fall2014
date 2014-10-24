@@ -43,21 +43,13 @@ Fork/Join Parallelism
 
 A very common pattern for parallel computation is *fork/join parallelism*. In programs that employ this form of computation, the main program creates some number of parallel "worker" threads, starts them, and then waits for all of them to complete.
 
-Here is how fork/join parallelism can be implemented in Java. This code example assumes that there is a class called **Chunk** which represents a "chunk" of a parallel computation, and a class called **ComputeTask** that implements the **Runnable** interface and carries out a given chunk of the computation. This example creates 4 threads, allowing parallel computation on up to 4 CPU cores simultaneously.
+Here is how fork/join parallelism can be implemented in Java. This code example assumes that there is a class called **ComputeTask** that implements the **Runnable** interface and carries out a given chunk of the computation. This example creates 4 threads, allowing parallel computation on up to 4 CPU cores simultaneously.
 
 {% highlight java %}
-Chunk[] chunks = new Chunk[4];
-
-// split the computation into 4 chunks
-chunks[0] = ...
-chunks[1] = ...
-chunks[2] = ...
-chunks[3] = ...
-
-// create the tasks
+// Split the computation into 4 tasks
 ComputeTask[] tasks = new ComputeTask[4];
 for (int i = 0; i < 4; i++) {
-    tasks[i] = new ComputeTask(chunks[i]);
+    tasks[i] = new ComputeTask(...data that describes the task...);
 }
 
 // create the threads that will execute the tasks,
