@@ -15,7 +15,10 @@ You should see a project called **CS201\_Assign05** in the Package Explorer. You
 Your Task
 =========
 
-Your task is to implement a renderer for the [Mandelbrot Set](http://en.wikipedia.org/wiki/Mandelbrot_set), using [parallel computation](../lecture/lecture17.html) to speed up the rendering process.
+Your task is to implement a renderer for the [Mandelbrot Set](http://en.wikipedia.org/wiki/Mandelbrot_set), using [parallel computation](../lectures/lecture17.html) to speed up the rendering process.
+
+> ![Exploit all the cores!](images/assign05/exploitAllTheCores.jpg)
+> <br>Apologies to [Allie Brosh](http://hyperboleandahalf.blogspot.com/)
 
 The program should prompt the user for a pair of x,y coordinates specifying corners of a rectangle in the x/y plane. The program should also prompt the user to enter the name of a file ending with the ".png" file extension. Once this input has been entered, the program should render a 600 pixel by 600 pixel image which visualizes the specified region of the Mandelbrot set.
 
@@ -119,6 +122,8 @@ MandelbrotTask task = MandelbrotTask(x1, y1, x2, y2, 0, WIDTH, 0, HEIGHT, iterCo
 task.run();
 {% endhighlight %}
 
+Note that this approach is purely sequential, and will not take advantage of multiple CPU cores.
+
 Rendering the Mandelbrot Set
 ============================
 
@@ -162,7 +167,7 @@ Parallelism
 
 The computation performed by the program can take a fair amount of CPU time. However, the computation of the number of iterations for each point is *independent* of the computations for all other points. Therefore, you can speed the program up by using multiple threads to compute the number of iterations in different parts of the overall region.
 
-For example, you might divide the overall region into quadrants, and use a separate thread to compute the points in each quadrant. Since there are four threads, if you run the program on a computer with 4 CPU cores, then you could see up to a 4 times speedup.
+For example, you might divide the overall region into quadrants, and use a separate thread to compute the points in each quadrant. Since there are four threads, if you run the program on a computer with 4 CPU cores, then you could see up to a 4 times speedup.  (Question: is this the best approach for dividing up the work?)
 
 **Suggestion**: Create multiple **MandelbrotTask** objects, and execute them in multiple threads.
 
