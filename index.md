@@ -21,6 +21,7 @@ course will be posted here.
 
 ## News
 
+* **Oct 24** - [Assignment 5](assign/assign05.html) is due on Wednesday, Nov 12th by 11:59 PM.  Also, a second practice exam has been posted on the [Practice Exams](practice/index.html) page.  Exam 2 will take place in class on Wednesday, Nov 19th.
 * **Oct 14** - [Solutions](labs/lab13soln.pdf) to [Lab 13](labs/lab13.html) have been posted.
 * **Oct 8** - [Assignment 4](assign/assign04.html) has been posted.  Milestone 1 is due Wednesday, Oct 22nd by 11:59 PM.  Milestone 2 is due Friday, Oct 31st by 11:59 PM.
 * **Oct 1** - Solutions to the first practice exam are posted on the [Practice Exams](practice/index.html) page.

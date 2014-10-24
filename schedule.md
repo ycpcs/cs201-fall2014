@@ -33,6 +33,7 @@ This page lists the schedule for the course.  Please note that the schedule may 
 > Nov 7 | [Lecture 21: Proof by Induction](lectures/lecture21.html), 7.2
 > Nov 12 | [Lecture 22: Memoization and Dynamic Programming](lectures/lecture22.html), 7.6
 > Nov 14 | Work day (on your own): Advanced recursion lab
+> Nov 17 | Exam review
 > Nov 19 | **Exam 2**
 > Nov 21 | [Lecture 23: Insertion and Shell Sorts](lectures/lecture23.html), 8.1-8.3 
 > Dec 3 | [Lecture 24: Merge and Quick Sort](lectures/lecture24.html), 8.5-8.6
