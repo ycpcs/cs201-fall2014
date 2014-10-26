@@ -169,7 +169,7 @@ The computation performed by the program can take a fair amount of CPU time. How
 
 For example, you might divide the overall region into quadrants, and use a separate thread to compute the points in each quadrant. Since there are four threads, if you run the program on a computer with 4 CPU cores, then you could see up to a 4 times speedup.  (Question: is this the best approach for dividing up the work?)
 
-**Suggestion**: Create multiple **MandelbrotTask** objects, and execute them in multiple threads.
+**Suggestion**: Create multiple **MandelbrotTask** objects, and execute each one in a separate thread.
 
 Grading Criteria
 ================
