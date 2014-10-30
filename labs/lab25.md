@@ -6,7 +6,7 @@ title: "Lab 25: Singly-linked lists"
 Getting Started
 ===============
 
-Import <CS201_Lab25.zip> (**File-\>Import...-\>General-\>Existing Projects into Workspace-\>Archive File**). You should see a project called **CS201\_Lab23** in the Package Explorer.
+Import [CS201\_Lab25.zip](CS201_Lab25.zip) (**File&rarr;Import...&rarr;General&rarr;Existing Projects into Workspace&rarr;Archive File**). You should see a project called **CS201\_Lab23** in the Package Explorer.
 
 Your Task
 =========
