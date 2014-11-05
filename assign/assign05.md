@@ -61,6 +61,32 @@ Important Hint
 
 Because the core computation is based on complex numbers, having a class to represent complex numbers will make implementing the computation much easier. The class should look something like this:
 
+{% highlight java %}
+public class Complex {
+    // ...fields...
+
+    // Constructor
+    public Complex(double real, double imag) {
+        // ...
+    }
+
+    // add given complex number to this one, returning the Complex result
+    public Complex add(Complex other) {
+        // ...
+    }
+
+    // multiply given complex number by this one, returning the Complex result
+    public Complex multiply(Complex other) {
+        // ...
+    }
+
+    // get the magnitude of this complex number
+    public double getMagnitude() {
+        // ...
+    }
+}
+{% endhighlight %}
+
 You will need to think about what fields to add and how to implement each operation.
 
 Once your **Complex** class is ready, you can iterate the equation as follows:
