@@ -110,7 +110,7 @@ More or less all of the "built-in" classes in Java, such as **String**, **Intege
 Balanced Search Trees
 ---------------------
 
-See [course notes on binary search trees](../notes/binarySearchTrees.html) for more information.
+See [notes on binary search trees](binarySearchTrees.html) for more information.
 
 **TreeSet** and **TreeMap** use a *balanced search tree* as the underlying data structure.
 
