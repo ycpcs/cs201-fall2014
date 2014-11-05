@@ -22,6 +22,7 @@ course will be posted here.
 
 ## News
 
+* **Nov 5** - The description for [Assignment 5](assign/assign05.html) has been fixed to add a suggested skeleton for the **Complex** class.  Also, the due date has been changed to Tuesday, November 18th by 11:59 PM.
 * **Oct 24** - [Assignment 5](assign/assign05.html) is due on Wednesday, Nov 12th by 11:59 PM.  Also, a second practice exam has been posted on the [Practice Exams](practice/index.html) page.  Exam 2 will take place in class on Wednesday, Nov 19th.
 * **Oct 17** - Added a link (above) to the [Java 7 API documentation](http://docs.oracle.com/javase/7/docs/api/).
 * **Oct 14** - [Solutions](labs/lab13soln.pdf) to [Lab 13](labs/lab13.html) have been posted.
