@@ -22,6 +22,7 @@ course will be posted here.
 
 ## News
 
+* **Nov 16** - Solutions to the second practice exam have been posted on the [Practice Exams](practice/index.html) page.  Don't forget that Exam 2 will take place in class on Wednesday, Nov 19th. The format will be the same as Exam 1.
 * **Nov 5** - The description for [Assignment 5](assign/assign05.html) has been fixed to add a suggested skeleton for the **Complex** class.  Also, the due date has been changed to Tuesday, November 18th by 11:59 PM.
 * **Oct 24** - [Assignment 5](assign/assign05.html) is due on Wednesday, Nov 12th by 11:59 PM.  Also, a second practice exam has been posted on the [Practice Exams](practice/index.html) page.  Exam 2 will take place in class on Wednesday, Nov 19th.
 * **Oct 17** - Added a link (above) to the [Java 7 API documentation](http://docs.oracle.com/javase/7/docs/api/).
