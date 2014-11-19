@@ -12,3 +12,4 @@ This page links to homework assignments.
 > [Assignment 3: Angry Gorillas](assign03.html) | [CS201\_Assign03.zip](CS201_Assign03.zip) | Milestone 1: Friday, Sep 26th by 11:59 PM<br>Milestone 2: Tuesday, Oct 7th by 11:59 PM
 > [Assignment 4: Klondike](assign04.html) | [CS201\_Assign04.zip](CS201_Assign04.zip) | Milestone 1: Wednesday, Oct 22nd by 11:59 PM<br>Milestone 2: Friday, Oct 31st by 11:59 PM
 > [Assignment 5: Mandelbrot Set Renderer](assign05.html) | [CS201\_Assign05.zip](CS201_Assign05.zip) | Tuesday, Nov 18th by 11:59 PM
+> [Assignment 6: Web Crawler](assign06.html) | [CS201\_Assign06.zip](CS201_Assign06.zip) | Tuesday, Dec 9th by 11:59 PM

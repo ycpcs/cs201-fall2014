@@ -22,6 +22,7 @@ course will be posted here.
 
 ## News
 
+* **Nov 19** - [Assignment 6](assign/assign06.html) is due Tuesday, Dec 9th by 11:59 PM.  It is the last assignment.
 * **Nov 17** - Exam 2 will be open book and open notes, but no electronics (with the exception of e-book readers used to access the textbook.)
 * **Nov 16** - Solutions to the second practice exam have been posted on the [Practice Exams](practice/index.html) page.  Don't forget that Exam 2 will take place in class on Wednesday, Nov 19th. The format will be the same as Exam 1.
 * **Nov 5** - The description for [Assignment 5](assign/assign05.html) has been fixed to add a suggested skeleton for the **Complex** class.  Also, the due date has been changed to Tuesday, November 18th by 11:59 PM.
