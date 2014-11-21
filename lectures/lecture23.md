@@ -49,9 +49,9 @@ public static<E> void swap(E[] arr, int i, int j) {
 Analysis
 --------
 
-The outer loop always executes O(N) times. In the worst case, the inner loop executes **j** - 1 iterations. So, overall, the algorithm is O(N\<sup\>2\</sup\>). This worst case occurs when the array is initially in reverse order: this forces the inner loop to do the maximum amount of work when inserting each element.
+The outer loop always executes O(N) times. In the worst case, the inner loop executes **j** - 1 iterations. So, overall, the algorithm is O(N<sup>2</sup>). This worst case occurs when the array is initially in reverse order: this forces the inner loop to do the maximum amount of work when inserting each element.
 
-The average case is also O(N\<sup\>2\</sup\>). Because the array is initially unsorted, each inserted element is equally likely to be placed at any index less than **j**, so the average amount of work needed to insert an element is **j**/2.
+The average case is also O(N<sup>2</sup>). Because the array is initially unsorted, each inserted element is equally likely to be placed at any index less than **j**, so the average amount of work needed to insert an element is **j**/2.
 
 Shell Sort
 ==========
