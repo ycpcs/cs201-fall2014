@@ -9,6 +9,8 @@ Although labs are not graded, they are part of the quizzes, attendance,
 and participation component of the course grade.  Not completing
 and submitting the labs will negatively impact your course grade.
 
+Note: [Lab 25](lab25.html) is optional, although I recommend that you do it.
+
 Date | Lab | File
 ---- | --- | ----
 Aug 27 | [Lab 1: Dog Years](lab01.html) | [CS201\_Lab01.zip](CS201_Lab01.zip)
