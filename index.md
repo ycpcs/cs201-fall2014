@@ -23,6 +23,7 @@ course will be posted here.
 
 ## News
 
+* **Dec 3** - If you need to fix Eclipse in KEC 123, follow [these instructions](fixEclipse.html).
 * **Dec 3** - The description for [Assignment 6](assign/assign06.html) has been updated to add missing information about how to extract links from web pages and how to canonicalize URIs.
 * **Nov 21** - You can download [SortDemo.zip](lectures/SortDemo.zip), which demonstrates sorting algorithms.
 * **Nov 21** - The [Schedule](schedule.html) has been changed: on Dec 5th we will have an in-class "Do-Over" for the programming part of Exam 2.  You may use this as an opportunity to replace your score on the programming section of Exam 2.  I highly recommend using [Codingbat](http://codingbat.com) to practice for the Do-Over, especially the [Java recursion problems](http://codingbat.com/java/Recursion-1).
