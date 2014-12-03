@@ -11,6 +11,6 @@ Right click on the Eclipse shortcut on the desktop and choose **Properties**.  C
 
     "C:/Program Files/eclipse/eclipse.exe" -vm "C:/Program Files/Java/jdk1.8.0_05/bin/javaw.exe"
 
-Click **Apply**, then **Close**.
+Click **Apply**, then **Ok**.
 
 Double-clicking the Eclipse shortcut on the Desktop should now start Eclipse as normal.
