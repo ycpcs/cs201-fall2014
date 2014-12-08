@@ -16,3 +16,5 @@ Note: These are from Fall 2013, when the class meetings were 100 minutes rather 
 
 * [Solutions to Exam 2 written questions](cs201-fall2013-exam2-solution.pdf)
 * [Solution to Exam 2 programming question](CS201_Exam2_Solution.zip)
+
+[Final Exam, Fall 2013](cs201-fall2013-final.pdf), [CS201\_Final.zip](CS201_Final.zip) (Eclipse project for programming questions)

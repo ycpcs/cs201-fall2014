@@ -23,6 +23,7 @@ course will be posted here.
 
 ## News
 
+* **Dec 8** - The final exam will take place on Friday, Dec 12th.  The times are as follows: Section 101 at 10:15 AM, Section 102 at 12:45 PM, Section 103 at 3:00 PM.  A practice final exam has been posted on the [Practice Exams](practice/index.html) page.
 * **Dec 3** - If Eclipse no longer starts for you in KEC 123, follow [these instructions](fixEclipse.html) to fix it.
 * **Dec 3** - The description for [Assignment 6](assign/assign06.html) has been updated to add missing information about how to extract links from web pages and how to canonicalize URIs.
 * **Nov 21** - You can download [SortDemo.zip](lectures/SortDemo.zip), which demonstrates sorting algorithms.
